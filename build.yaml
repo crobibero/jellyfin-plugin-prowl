@@ -1,0 +1,16 @@
+---
+name: "jellyfin-plugin-prowl"
+guid: "e33266b6-4e16-4412-8c2c-a93d65d458e5"
+version: "1" # Please increment with each pull request
+jellyfin_version: "10.5.0" # The earliest binary-compatible version
+owner: "crobibero"
+nicename: "Prowl"
+description: "Sends notifications using the Prowl service"
+overview: >
+    Get notifications via PRowl
+category: "Notifications"
+artifacts:
+  - "Jellyfin.Plugin.Prowl.dll"
+build_type: "dotnet"
+dotnet_configuration: "Release"
+dotnet_framework: "netstandard2.1"
