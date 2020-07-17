@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Jellyfin.Plugin.Prowl.Configuration;
 using Jellyfin.Plugin.Prowl.Utils;
 using MediaBrowser.Common.Net;
-using MediaBrowser.Model.Serialization;
 using MediaBrowser.Model.Services;
 using Microsoft.Extensions.Logging;
 

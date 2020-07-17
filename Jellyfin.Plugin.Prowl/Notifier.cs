@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Jellyfin.Data.Entities;
 using Jellyfin.Plugin.Prowl.Configuration;
 using Jellyfin.Plugin.Prowl.Utils;
 using MediaBrowser.Common.Net;
-using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Notifications;
-using MediaBrowser.Model.Serialization;
 using Microsoft.Extensions.Logging;
 
 namespace Jellyfin.Plugin.Prowl
@@ -65,7 +64,7 @@ namespace Jellyfin.Plugin.Prowl
             await _httpClient.Get(requestOptions).ConfigureAwait(false);
         }
 
-        private static ProwlOptions GetOptions(BaseItem user)
+        private static ProwlOptions GetOptions(User user)
         {
             return Plugin.Instance.Configuration.Options
                 .FirstOrDefault(i =>
