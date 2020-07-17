@@ -20,3 +20,7 @@ dotnet publish --configuration Release --output bin
 ### Screenshot
 
 <img src=screenshot.png>
+
+
+### Plugin Repo
+https://repo.codyrobibero.dev/manifest.json
